@@ -14,4 +14,6 @@ use App\Http\Controllers\WeightController;
 |
 */
 
-Route::get('/', [WeightController::class, 'register']);
+Route::get('/', [WeightController::class, 'index']);
+
+Route::post('/register/register2', [WeightController::class, 'confirm']);
