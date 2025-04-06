@@ -1,0 +1,17 @@
+body {
+    height: 100%;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header  {
+
+}
+
+.header__heading {
+    color: #EC87EF
+}
