@@ -13,7 +13,7 @@ class CreateWeightLogsTable extends Migration
      */
     public function up()
     {
-        Schema::create('weight_logs', function (Blueprint $table) {
+        Schema::create('Weight_Logs', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained();
             $table->date('date');

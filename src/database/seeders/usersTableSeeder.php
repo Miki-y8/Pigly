@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class user1sTableSeeder extends Seeder
+class UsersTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -19,6 +19,6 @@ class user1sTableSeeder extends Seeder
       'email' => '111@111',
       'password' => '1234',
     ];
-    DB::table('user1s')->insert($param);
+    DB::table('users')->insert($param);
     }
 }

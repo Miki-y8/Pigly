@@ -38,3 +38,7 @@
 </table>
 
 @section('content')
+
+$weight_logs = WeightLog::all();
+
+'weight_logs',['weight_logs' => $weight_logs]
