@@ -12,20 +12,15 @@ class WeightController extends Controller
     public function index()
     {
         return view('register');
+
     }
 
 
-    public function admin()
-    {
-     $weight_logs = Contact::with('category')->paginate(8);
-    }
-
-    public function create(LoginRequest $request)
-    {
-        $form = $request->all();
-        Author::create($form);
-        return redirect('/');
-    }
-
-
+    public function confirm(Request $request)
+     {
+    $contact = $request->only(['name', 'email', 'password',]);
+   return view('register2', compact('contact'));
 }
+     }
+
+
